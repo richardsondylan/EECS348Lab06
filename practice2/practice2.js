@@ -26,11 +26,10 @@ function changeCSS(event){
             
             const paragraph = document.getElementById("paragraph");
             paragraph.style.color = `rgb(${paragraphRed}, ${paragraphBlue}, ${paragraphGreen})`;
-            paragraph.style.borderWidth = "5px";
             paragraph.style.borderStyle = "solid";
             paragraph.style.borderColor = `rgb(${borderRed}, ${borderBlue}, ${borderGreen})`;
             if(width >= 0){
-                paragraph.style.width = width;
+                paragraph.style.borderWidth = width;
             }
         }
 
